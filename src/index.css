@@ -1,13 +1,57 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div.App {
+  background-color:yellow;
+  width: 100vw;
+  padding: 2rem;
+}
+
+div.App > h1 {
+  text-align: center;
+}
+
+div.baseCurrency,
+div.convertedCurrency {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 1.25rem;
+}
+
+div.baseCurrency > h2,
+div.convertedCurrency > h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* base currency */
+div.App > div.baseCurrency {
+  background-color: red;
+}
+
+div.baseCurrency > button{
+  display: block;
+  margin: 0 auto;
+}
+
+/* currency converting to */
+div.App > div.convertedCurrency {
+  background-color: green;
 }
